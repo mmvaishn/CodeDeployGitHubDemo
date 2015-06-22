@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Lions Club - Pune</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/style.css" />
+    <link rel="stylesheet" href="~/Content/blue.css">
+    <link rel="stylesheet" href="~/Content/responsive.css">
+    <link rel="stylesheet" href="~/Content/custom.css">
+</head>
+<body>
+    <div id="header">
+        @Html.Partial("~/Views/Shared/_Header.cshtml")
+    </div>
+    @RenderSection("featured", required: false)
+    @RenderBody()
+    <div>
+        @Html.Partial("~/Views/Shared/_Footer.cshtml")
+    </div>
+    <script src="~/Scripts/foundation.min.js"></script>
+    <script src="~/Scripts/jquery.cycle.js"></script>
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/modernizr.foundation.js"></script>
+    <script src="~/Scripts/slidepanel.js"></script>
+    <script src="~/Scripts/scrolltotop.js"></script>
+    <script src="~/Scripts/hoverIntent.js"></script>
+    <script src="~/Scripts/superfish.js"></script>
+    <script src="~/Scripts/responsivemenu.js"></script>
+    <script src="~/Scripts/jquery.tweet.js"></script>
+    <script src="~/Scripts/twitterusername.js"></script>
+    <script src="~/Scripts/jquery.isotope.min.js"></script>
+    <script src="~/Scripts/jquery.prettyPhoto.js"></script>
+    <script src="~/Scripts/custom.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿<div id="panel">
+    <div class="row">
+        <div class="twelve columns">
+            <img src="~/images/info.png" class="pics" alt="info">
+            <div class="infotext">
+                Thank you for visiting Lions Club - Pune.
+            </div>
+        </div>
+    </div>
+</div>
+<p class="slide">
+    <a href="#" class="btn-slide"></a>
+</p>
+<div class="row">
+    <div class="headerlogo four columns">
+        <div class="logo">
+            <img src="~/images/logo.png" class="pics" alt="logo">
+            <a href="~/Views/Home/Index.cshtml">
+                <h4>Lions Club - Pune</h4>
+            </a>
+        </div>
+    </div>
+    <div class="headermenu eight columns noleftmarg">
+        <nav id="nav-wrap">
+            <ul id="main-menu" class="nav-bar sf-menu">
+                <li class="current">
+                    <a>
+                        @Html.ActionLink("Home", "Index", "Home")
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        @Html.ActionLink("About Us", "About", "Home")
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        @Html.ActionLink("News and Events", "News", "Home")
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        @Html.ActionLink("Meet Our Team", "Team", "Home")
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        @Html.ActionLink("Gallery", "Gallery", "Home")
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        @Html.ActionLink("Contact", "Contact", "Home")
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="clear">
+</div>
